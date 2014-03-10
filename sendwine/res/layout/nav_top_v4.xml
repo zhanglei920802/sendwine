@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_height"
+    android:background="@drawable/nav_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="6dip"
+        android:background="@null"
+        android:clickable="true"
+        android:contentDescription="@string/back"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:gravity="center_vertical|left"
+        android:maxLength="3"
+        android:minWidth="70dip"
+        android:paddingRight="10dip"
+        android:singleLine="true"
+        android:src="@drawable/icon_back"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLength="10"
+        android:paddingRight="5.0dip"
+        android:singleLine="true"
+        android:text="@string/detail"
+        android:textColor="@color/white"
+        android:textSize="20.0dip" />
+
+    <ImageButton
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@null"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:gravity="center"
+        android:maxLength="3"
+        android:src="@drawable/icon_share"
+        android:visibility="visible" />
+
+</RelativeLayout>

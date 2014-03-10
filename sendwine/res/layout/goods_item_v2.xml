@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/goods_icon"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_toRightOf="@id/goods_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:orientation="vertical" >
+        <TextView android:id="@+id/category_name" android:textSize="@dimen/text_size_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dip" android:text="贵州特醇-华彩人生" android:textColor="@color/black"/>
+     	<TextView   android:singleLine="true" android:id="@+id/category_introduce" android:layout_width="match_parent" android:layout_height="wrap_content"  android:drawableRight="@drawable/icon_right_arrow_v1" android:drawablePadding="10dip" android:textColor="@color/gray" android:padding="5dip" android:textSize="@dimen/text_size_16"  android:text="贵州特醇-华彩人生"/>
+    		
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

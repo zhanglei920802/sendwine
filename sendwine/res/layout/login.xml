@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/nav_top_v1" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.sendwine.app.ui.widgets.ClearableEditText
+                android:id="@+id/tel"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edittext"
+                android:drawableLeft="@drawable/input_icon_user"
+                android:drawablePadding="10dip"
+                android:hint="@string/tel"
+                android:inputType="phone"
+                android:padding="5dip"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.sendwine.app.ui.widgets.ClearableEditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edittext"
+                android:drawableLeft="@drawable/input_icon_lock"
+                android:drawablePadding="10dip"
+                android:hint="@string/pwd"
+                android:inputType="textPassword"
+                android:padding="5dip"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <CheckBox
+                android:id="@+id/remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:text="@string/remember_pwd" />
+
+            <TextView
+                android:id="@+id/register_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="right"
+                android:text="@string/register_new"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_16" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/shape_corner"
+                android:drawablePadding="10dip"
+                android:hint="@string/login"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

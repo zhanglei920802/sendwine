@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dip" >
+	<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/content_wrap">
+	    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dip" android:textColor="@color/gray" android:id="@+id/cus_name" android:textSize="14sp" android:text="陈先生"/>
+	    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dip" android:textColor="@color/black" android:id="@+id/comments_content" android:textSize="16sp" android:text="好酒,推荐!"/>
+	 </LinearLayout>
+
+	   	<RatingBar  
+   	    android:layout_centerVertical="true"
+   	   android:layout_alignParentRight="true" android:id="@+id/goods_comment_score" android:clickable="false" android:focusable="false"   android:isIndicator="true"  style="@style/Widget.RatingBar"  android:layout_width="wrap_content"     android:layout_height="wrap_content" android:numStars="5" android:rating="1.5"    />
+   
+    
+</RelativeLayout>

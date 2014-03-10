@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/search" />
+
+    <LinearLayout
+        android:id="@+id/hot_wrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="@string/hot_search"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <GridView
+            android:id="@+id/search_hot"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

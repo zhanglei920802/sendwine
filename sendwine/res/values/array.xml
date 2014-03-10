@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="goods_params">
+        <item>净含量:%s ml</item>
+        <item>产地:%s</item>
+        <item>类型:%s</item>
+        <item>状态:%s</item>
+    </string-array>
+    <string-array name="good_detail_tab">
+        <item>产品参数</item>
+        <item>商品详情</item>
+        <item>评价</item>
+    </string-array>
+    <string-array name="menu_list">
+        <item>国台</item>
+        <item>泸州老窖</item>
+        <item>浏阳河</item>
+        <item>马爹利</item>
+        <item>茅台</item>
+    </string-array>
+    <string-array name="pop_menu">
+        <item>登录</item>
+        <item>注册</item>
+        <item>我的订单</item>
+    </string-array>
+
+</resources>

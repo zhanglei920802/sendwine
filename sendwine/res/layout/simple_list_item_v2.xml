@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/simple_tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:drawablePadding="10dip"
+        android:gravity="left|center_vertical"
+        android:padding="10dip"
+        android:shadowColor="@color/black"
+        android:shadowDx="20"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_18" >
+    </TextView>
+
+</RelativeLayout>

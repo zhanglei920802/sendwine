@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/lv_cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:cacheColorHint="@color/white"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:visibility="visible" >
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_gravity="bottom"
+            android:background="#e0e0e0" >
+
+            <Button
+                android:id="@+id/check_gloab"
+                android:layout_width="80dip"
+                android:layout_height="match_parent"
+                android:background="#5bd400"
+                android:text="@string/select_all"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/check_gloab"
+                android:gravity="center"
+                android:minHeight="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@null"
+                    android:text="总计:￥"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/total_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@null"
+                    android:textColor="#ff4f00"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/payout"
+                android:layout_width="80dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dip"
+                android:background="#ff0000"
+                android:text="@string/payout"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
