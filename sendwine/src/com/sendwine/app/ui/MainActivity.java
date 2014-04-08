@@ -3,8 +3,8 @@
  * @Package com.sendwine.app.ui 
  * @Description: 
  *			
- * @author  ÕÅÀ× 794857063@qq.com
- * @date 2014-1-1 ÏÂÎç3:16:51 
+ * @author  ï¿½ï¿½ï¿½ï¿½ 794857063@qq.com
+ * @date 2014-1-1 ï¿½ï¿½ï¿½ï¿½3:16:51 
  * @version V1.0   
  */
 
@@ -45,9 +45,9 @@ import com.slidingmenu.lib.SlidingMenu;
 
 /**
  * @ClassName: MainActivity
- * @Description: TODO(ÕâÀïÓÃÒ»¾ä»°ÃèÊöÕâ¸öÀàµÄ×÷ÓÃ)
- * @author ÕÅÀ× 794857063@qq.com
- * @date 2014-1-1 ÏÂÎç3:16:51
+ * @Description: TODO(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ä»°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+ * @author ï¿½ï¿½ï¿½ï¿½ 794857063@qq.com
+ * @date 2014-1-1 ï¿½ï¿½ï¿½ï¿½3:16:51
  * 
  */
 public class MainActivity extends MainBaseActivity {
@@ -62,9 +62,9 @@ public class MainActivity extends MainBaseActivity {
 
 	private GridView search_hot = null;
 
-	// ²âÊÔÊý¾Ý
-	private String[] hotData = new String[] { "ÎåÁ¸Òº", "Ã©Ì¨", "¹úÌ©", "ÎåÁ¸Òº", "Ã©Ì¨",
-			"¹úÌ©"
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String[] hotData = new String[] { "ï¿½ï¿½ï¿½ï¿½Òº", "Ã©Ì¨", "ï¿½ï¿½Ì©", "ï¿½ï¿½ï¿½ï¿½Òº", "Ã©Ì¨",
+			"ï¿½ï¿½Ì©"
 
 	};
 
@@ -92,7 +92,7 @@ public class MainActivity extends MainBaseActivity {
 	private int flag = 0;
 
 	/**
-	 * (·Ç Javadoc)
+	 * (ï¿½ï¿½ Javadoc)
 	 * <p>
 	 * Title: getPreActivityData
 	 * </p>
@@ -108,8 +108,8 @@ public class MainActivity extends MainBaseActivity {
 
 	}
 
-	/**
-	 * (·Ç Javadoc)
+	/**      
+	 * (ï¿½ï¿½ Javadoc)
 	 * <p>
 	 * Title: initData
 	 * </p>
@@ -123,6 +123,7 @@ public class MainActivity extends MainBaseActivity {
 	public void initData() {
 		// TODO Auto-generated method stub
 		{
+		System.out.println("MainActivity.initData()");
 			mHotAdapter = new ArrayAdapter<String>(mAppContext,
 					R.layout.hotitem, hotData);
 		}
@@ -130,7 +131,7 @@ public class MainActivity extends MainBaseActivity {
 		{
 			mCategorys = new ArrayList<Category>();
 			mCategorysAdapter = new GoodsAdapter();
-			mCategorys.add(new Category("°×¾Æ", "ÎåÁ¸Òº,Â¶¾ÆÀÏ½ÑµÈÎåÁ¸Òº,Â¶¾ÆÀÏ½ÑµÈÎåÁ¸Òº,Â¶¾ÆÀÏ½ÑµÈ"));
+			mCategorys.add(new Category("ï¿½×¾ï¿½", "ï¿½ï¿½ï¿½ï¿½Òº,Â¶ï¿½ï¿½ï¿½Ï½Ñµï¿½ï¿½ï¿½ï¿½ï¿½Òº,Â¶ï¿½ï¿½ï¿½Ï½Ñµï¿½ï¿½ï¿½ï¿½ï¿½Òº,Â¶ï¿½ï¿½ï¿½Ï½Ñµï¿½"));
 			mCategorys.addAll(mCategorys.subList(0, mCategorys.size()));
 			mCategorys.addAll(mCategorys.subList(0, mCategorys.size()));
 			mCategorys.addAll(mCategorys.subList(0, mCategorys.size()));
@@ -143,8 +144,8 @@ public class MainActivity extends MainBaseActivity {
 
 			mArticles = new ArrayList<com.sendwine.app.bean.Article>();
 			mArticles
-					.add(new com.sendwine.app.bean.Article("ÖÐ¹ú°×¾ÆµÄ·¢Õ¹ÀúÊ·",
-							"ÖÐ¹ú°×¾ÆµÄ·¢Õ¹ÀúÊ·ÖÐ¹ú°×¾ÆµÄ·¢Õ¹ÀúÊ·ÖÐ¹ú°×¾ÆµÄ·¢Õ¹ÀúÊ·ÖÐ¹ú°×¾ÆµÄ·¢Õ¹ÀúÊ·ÖÐ¹ú°×¾ÆµÄ·¢Õ¹ÀúÊ·ÖÐ¹ú°×¾ÆµÄ·¢Õ¹ÀúÊ·ÖÐ¹ú°×¾ÆµÄ·¢Õ¹ÀúÊ·ÖÐ¹ú°×¾ÆµÄ·¢Õ¹ÀúÊ·"));
+					.add(new com.sendwine.app.bean.Article("ï¿½Ð¹ï¿½×¾ÆµÄ·ï¿½Õ¹ï¿½ï¿½Ê·",
+							"ï¿½Ð¹ï¿½×¾ÆµÄ·ï¿½Õ¹ï¿½ï¿½Ê·ï¿½Ð¹ï¿½×¾ÆµÄ·ï¿½Õ¹ï¿½ï¿½Ê·ï¿½Ð¹ï¿½×¾ÆµÄ·ï¿½Õ¹ï¿½ï¿½Ê·ï¿½Ð¹ï¿½×¾ÆµÄ·ï¿½Õ¹ï¿½ï¿½Ê·ï¿½Ð¹ï¿½×¾ÆµÄ·ï¿½Õ¹ï¿½ï¿½Ê·ï¿½Ð¹ï¿½×¾ÆµÄ·ï¿½Õ¹ï¿½ï¿½Ê·ï¿½Ð¹ï¿½×¾ÆµÄ·ï¿½Õ¹ï¿½ï¿½Ê·ï¿½Ð¹ï¿½×¾ÆµÄ·ï¿½Õ¹ï¿½ï¿½Ê·"));
 			mArticles.addAll(mArticles.subList(0, mArticles.size()));
 			mArticles.addAll(mArticles.subList(0, mArticles.size()));
 			mArticles.addAll(mArticles.subList(0, mArticles.size()));
@@ -155,17 +156,17 @@ public class MainActivity extends MainBaseActivity {
 			{
 				mCartBeans = new ArrayList<CartBean>();
 				mCartAdapter = new CartAdapter();
-				mCartBeans.add(new CartBean(1, true, "ÎåÁ¸Òº", "3333", "33333",
+				mCartBeans.add(new CartBean(1, true, "ï¿½ï¿½ï¿½ï¿½Òº", "3333", "33333",
 						5.0f, "baidu.com", 1));
-				mCartBeans.add(new CartBean(1, true, "ÎåÁ¸Òº", "3333", "33333",
+				mCartBeans.add(new CartBean(1, true, "ï¿½ï¿½ï¿½ï¿½Òº", "3333", "33333",
 						5.0f, "baidu.com", 2));
-				mCartBeans.add(new CartBean(1, true, "ÎåÁ¸Òº", "3333", "33333",
+				mCartBeans.add(new CartBean(1, true, "ï¿½ï¿½ï¿½ï¿½Òº", "3333", "33333",
 						5.0f, "baidu.com", 3));
-				mCartBeans.add(new CartBean(1, true, "ÎåÁ¸Òº", "3333", "33333",
+				mCartBeans.add(new CartBean(1, true, "ï¿½ï¿½ï¿½ï¿½Òº", "3333", "33333",
 						5.0f, "baidu.com", 4));
-				mCartBeans.add(new CartBean(1, true, "ÎåÁ¸Òº", "3333", "33333",
+				mCartBeans.add(new CartBean(1, true, "ï¿½ï¿½ï¿½ï¿½Òº", "3333", "33333",
 						5.0f, "baidu.com", 5));
-				mCartBeans.add(new CartBean(1, true, "ÎåÁ¸Òº", "3333", "33333",
+				mCartBeans.add(new CartBean(1, true, "ï¿½ï¿½ï¿½ï¿½Òº", "3333", "33333",
 						5.0f, "baidu.com", 6));
 			}
 
@@ -246,7 +247,7 @@ public class MainActivity extends MainBaseActivity {
 	}
 
 	/**
-	 * (·Ç Javadoc)
+	 * (ï¿½ï¿½ Javadoc)
 	 * <p>
 	 * Title: initView
 	 * </p>
@@ -261,7 +262,7 @@ public class MainActivity extends MainBaseActivity {
 		// TODO Auto-generated method stub
 		sm = getSlidingMenu();
 
-		// ³õÊ¼»¯ËÑË÷
+		// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		{
 			keywords = (ClearableEditText) findViewById(R.id.keywords);
 			search = (ImageButton) findViewById(R.id.search);
@@ -269,7 +270,7 @@ public class MainActivity extends MainBaseActivity {
 			search_hot.setAdapter(mHotAdapter);
 		}
 
-		// ·ÖÀà
+		// ï¿½ï¿½ï¿½ï¿½
 		{
 			lv_category_list = (ListView) findViewById(R.id.lv_category_list);
 			lv_category_list.setAdapter(mCategorysAdapter);
@@ -336,7 +337,7 @@ public class MainActivity extends MainBaseActivity {
 						} else {
 							// selectall
 							select(true);
-							check_gloab.setText("È«²»Ñ¡");
+							check_gloab.setText("È«ï¿½ï¿½Ñ¡");
 							flag = 0;
 						}
 					}
@@ -347,7 +348,7 @@ public class MainActivity extends MainBaseActivity {
 					@Override
 					public void onClick(View v) {
 						// TODO Auto-generated method stub
-						Toast.makeText(mAppContext, "Ö§¸¶", Toast.LENGTH_SHORT)
+						Toast.makeText(mAppContext, "Ö§ï¿½ï¿½", Toast.LENGTH_SHORT)
 								.show();
 					}
 				});
@@ -359,7 +360,7 @@ public class MainActivity extends MainBaseActivity {
 	}
 
 	/**
-	 * (·Ç Javadoc)
+	 * (ï¿½ï¿½ Javadoc)
 	 * <p>
 	 * Title: loadData
 	 * </p>
@@ -376,7 +377,7 @@ public class MainActivity extends MainBaseActivity {
 	}
 
 	/**
-	 * (·Ç Javadoc)
+	 * (ï¿½ï¿½ Javadoc)
 	 * <p>
 	 * Title: onKeyDown
 	 * </p>
@@ -410,7 +411,7 @@ public class MainActivity extends MainBaseActivity {
 	private final class GoodsAdapter extends BaseAdapter {
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getCount
 		 * </p>
@@ -428,7 +429,7 @@ public class MainActivity extends MainBaseActivity {
 		}
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getItem
 		 * </p>
@@ -447,7 +448,7 @@ public class MainActivity extends MainBaseActivity {
 		}
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getItemId
 		 * </p>
@@ -466,7 +467,7 @@ public class MainActivity extends MainBaseActivity {
 		}
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getView
 		 * </p>
@@ -524,7 +525,7 @@ public class MainActivity extends MainBaseActivity {
 	private final class ArticleAdapter extends BaseAdapter {
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getCount
 		 * </p>
@@ -542,7 +543,7 @@ public class MainActivity extends MainBaseActivity {
 		}
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getItem
 		 * </p>
@@ -561,7 +562,7 @@ public class MainActivity extends MainBaseActivity {
 		}
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getItemId
 		 * </p>
@@ -580,7 +581,7 @@ public class MainActivity extends MainBaseActivity {
 		}
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getView
 		 * </p>
@@ -626,7 +627,7 @@ public class MainActivity extends MainBaseActivity {
 	private final class CartAdapter extends BaseAdapter {
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getCount
 		 * </p>
@@ -644,7 +645,7 @@ public class MainActivity extends MainBaseActivity {
 		}
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getItem
 		 * </p>
@@ -663,7 +664,7 @@ public class MainActivity extends MainBaseActivity {
 		}
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getItemId
 		 * </p>
@@ -682,7 +683,7 @@ public class MainActivity extends MainBaseActivity {
 		}
 
 		/**
-		 * (·Ç Javadoc)
+		 * (ï¿½ï¿½ Javadoc)
 		 * <p>
 		 * Title: getView
 		 * </p>
@@ -734,8 +735,8 @@ public class MainActivity extends MainBaseActivity {
 				holder.check.setChecked(tmp.checked);
 				// icon
 				holder.goods_name.setText(tmp.name);
-				holder.goods_price.setText("£¤" + tmp.price);
-				holder.sale_price.setText("£¤" + tmp.salePrice);
+				holder.goods_price.setText("ï¿½ï¿½" + tmp.price);
+				holder.sale_price.setText("ï¿½ï¿½" + tmp.salePrice);
 				holder.minus.setOnClickListener(new OnClickListener() {
 
 					@Override
